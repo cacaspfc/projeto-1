@@ -1,5 +1,7 @@
 body{
-    background-color: #000001e1; 
+    background-image: url(../imagens/background3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
     margin: 0;
     padding: 0;
     font-family: 'Source Code Pro', monospace;
@@ -9,24 +11,32 @@ body{
     /* position: fixed; */
     width: 100%;
     text-align: center;
+    display: flow-root;
+    border-bottom: solid 2px white;
 }
 
 ul li{
     list-style: none;
     display: inline;
-    padding: 30px;        
+    padding: 30px; 
+    color: white;  
+    margin: 0;     
 }
 
 a{
     text-decoration: none;
     color: rgb(221, 209, 209);
     font-family: 'Chakra Petch', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
+    text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e;
 }
 
 a:hover{
-    color: aliceblue;
+    color: rgb(255, 251, 0);
+    /* -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); */
 }
 
 main {
@@ -50,9 +60,11 @@ main {
 
 .texto-banner > h1{
     color: red;
-    padding-bottom: 81px;
+    padding-bottom: 21px;
+    padding-left: 97px;
     font-family: 'Chakra Petch', sans-serif;
     font-weight: bold;
+    font-size: 49px;
 }
 
 .texto-banner > p{
@@ -63,19 +75,82 @@ main {
 }
 
 #miolo{
+    height: 1000px;
+    width: 100%;
     display: flex;
     justify-content: space-around;
-    background-image: url(../imagens/img1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 924px;
-    width: 615px;
-    margin-top: 20px;
-    margin-left: 1%;
-    box-shadow:0px 0px 10px 1px #ff0000 ;
 }
 
 #miolo > .miolo-vertical{
-    background-color: springgreen;
+    background-image: url(../imagens/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 712px;
+    width: 469px;
+    left: 13px;
+    margin-top: 53px;
+    margin-left: 1%;
+    box-shadow: 0px 0px 10px 2px #ff0000;
+    display: flex;
+    opacity: 0.7;
+}
+
+#miolo > .miolo-vertical:hover{
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+
+#miolo > .miolo-vertical >p{
+    color: wheat;
+    text-align: center;
+    top: 500px;
+    font-size: 20px;
+    padding-top: 449px;
+}
+
+#miolo > .texto{
+    color: #f1f1f1;
+    background-image: url(../imagens/img2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 712px;
+    width: 638px;
+    margin-top: 53px;
+    right: 41px;
+    display: flex;
+    box-shadow: 0px 0px 10px 2px #0011ffe8;
+    opacity: 0.8;
+}
+
+#miolo>.texto:hover{
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.texto p{
+    font-weight: bold;
+    text-align: center;
+    padding-top: 363px;
+    flex-wrap: wrap;
+    font-size: 20px;
+    color: aquamarine;
+    position: relative;
+    padding-left: 158px;
+    padding-right: 155px;
+}
+
+#miolo-horizontal{
+    background-color: #f1f1f1;
+    width: 100%;
+    height: 480px;
+    opacity: 0.5;
 }
 
